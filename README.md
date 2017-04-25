@@ -19,4 +19,6 @@ Easy to use API that returns data in JSON or XML depending on preference. The do
 
 The documentation provides you with examples of the routes you'll need to use to get back the information you want.
 
+APIs don't need to be ruff.
+
 https://www.petfinder.com/developers/api-docs
