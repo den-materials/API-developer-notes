@@ -6,6 +6,16 @@ Here at GA we have compiled notes from our developer students about the APIs the
 
 This is where general API notes/advice will go.
 
+## PetFinder
+
+Easy to use API that returns data in JSON or XML depending on preference. The documentation provides you with ample descriptions of how to receive the type of data you want to and lets you hone in on specifics like age, location, breed, type of animal, etc. The data comes back with all the information you could possibly want to know about each animal along with image links, contact information and detailed descriptions.
+
+The documentation provides you with examples of the routes you'll need to use to get back the information you want.
+
+APIs don't need to be ruff.
+
+https://www.petfinder.com/developers/api-docs
+
 ## ShopStyle API
 
 ShopStyle is a great API for anyone that wants to access multiple retailers & clothing items all from one source.  Some examples are Nordstrom, Shopbop, etc.  The API returns JSON and is pretty straightforward but has a LOT of information to sort through so it's a great idea to think through your specific goals before diving in.  Getting the key is pretty easy, all you have to do is create an account through ShopStyle and they generate an API key that you can access through your account settings.  Here is a link to the API overview with directions:
