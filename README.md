@@ -10,6 +10,10 @@ This is where general API notes/advice will go.
 
 For this app I used the api "TrailAPI" from the site Mashape. While this api includes alot about trails around the world, it needs the npm library 'unirest' to function. There is documentation on unirest through npmjs.com, however its very exensive and time consuming to learn how to use it in 5 days. I also searched for tutorials on using unirest while buildiung restful routes and found one guy who was using Angular. Try not to use unirest.
 
+### Meetup.com API 
+
+This API provides some great information about meetups and events. However, while some things are documented well there is a pretty solid portion that is not. There is not a list of query options you can add to your query, only the end points you can go too. The end points provide some good information but many of them you must know a lot of details about the event to make the query. Most of the data you will get will be fairly general as it is really hard to narrow searches without knowing the query parameters. If you are willing to tinker and find out what information you are looking for and filter it yourself. Then check out this API, it is not that bad. Tip use api v3, &radius= and &topic_catagory=   are your friends. 
+
 ## PetFinder
 
 Easy to use API that returns data in JSON or XML depending on preference. The documentation provides you with ample descriptions of how to receive the type of data you want to and lets you hone in on specifics like age, location, breed, type of animal, etc. The data comes back with all the information you could possibly want to know about each animal along with image links, contact information and detailed descriptions.
