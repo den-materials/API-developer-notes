@@ -10,6 +10,19 @@ Check potential APIs for documentation on query parameters and route info.  If t
 
 See if the API you're interested in has been updated regularly/recently; if it hasn't, you might find a lot of bugs and missing data.  Also, the information might be outdated.
 
+## [Big Huge Thesaurus](https://words.bighugelabs.com/api.php)
+https://words.bighugelabs.com/api.php
+
+This API will take a key word, and return synonyms and antonyms
+organized by parts of speech (noun, adjective, etc.)
+
+Very easy to quickly get a working API key!
+Also straightforward to use.
+
+returned data can be in JSON, XML or PHP.
+
+Some of the returned synonyms seem unrelated, or redundant, but overall this is a great API!
+
 ## TheySaidSo.com/api
 
 A Database of quotes! Authors, Politicians, all around great minds...  If You like quotes this is a great resource.
