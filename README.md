@@ -6,6 +6,10 @@ Here at GA we have compiled notes from our developer students about the APIs the
 
 This is where general API notes/advice will go.
 
+## Co Trails
+
+For this app I used the api "TrailAPI" from the site Mashape. While this api includes alot about trails around the world, it needs the npm library 'unirest' to function. There is documentation on unirest through npmjs.com, however its very exensive and time consuming to learn how to use it in 5 days. I also searched for tutorials on using unirest while buildiung restful routes and found one guy who was using Angular. Try not to use unirest.
+
 ## PetFinder
 
 Easy to use API that returns data in JSON or XML depending on preference. The documentation provides you with ample descriptions of how to receive the type of data you want to and lets you hone in on specifics like age, location, breed, type of animal, etc. The data comes back with all the information you could possibly want to know about each animal along with image links, contact information and detailed descriptions.
