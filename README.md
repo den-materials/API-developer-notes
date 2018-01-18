@@ -230,3 +230,11 @@ A great resource with 400 calls for free a day and an inexpensive cost for unlim
 ## Denver RTD API
 
 If you're going to use this one be wary. I tried to get it up and running. It uses google's protobuf format (.pb), but the data supplied to users wasn't the (.proto) required to get it running. Could be awesome if you can get in touch with their support before you move forward to see how it works. 16 hours of looking and no luck for me.
+
+## StubHub API
+
+https://developer.stubhub.com/store/site/pages/userguide.jag
+
+https://developer.stubhub.com/store/site/pages/doc-tutorials.jag
+
+Above are two links that help to get the api key running for Stub Hub. If you follow the instructions on both then you will get the access token which is the one you want.
