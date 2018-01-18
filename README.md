@@ -98,3 +98,125 @@ https://www.mashape.com/
 -------------------
 by alex:
 highly recommend this api, great instructions online and lots of room for expansion and personalization. just takes a second to get used to their 'specific' commands, in this sense reading the documentation is essential otherwise you might be banging your head against the wall like "WHY CAN'T I GET THE LATITUDE WHEN I'M SAYIN .LAT", because it's not quite as simple as that. Like I said, highly recommend. 10/10 would use again.
+
+## TheySaidSo Famous Quotes API
+
+http://quotes.rest/
+
+Subscribe
+We have a huge collection of quotes in our database. And our best Quotes API gives easy way to access the data. Note if you are using our public API / quotes from our website an attribution link back to theysaidso.com is required. If you don't want to display attribution please sign up for the private API. Here is the code you can cut and paste to provide attribution.
+
+theysaidso.comtheysaidso.com
+
+Which will translate to something like this in your webpage. Nothing too big. Just a small token of appreciation from you for our service.
+
+theysaidso.comtheysaidso.com
+
+This page is only for high level reference only. For full documentation of the API and to test the API end points from your browser visit http://quotes.rest.
+
+API End Points
+The end point for connecting, if you subscribe directly from us use this endpoint.
+
+http://quotes.rest/
+Authentication
+The API's marked as public below can be accessed without any authentication.
+
+Here is an example of requesting an inspiring quote of the day using curl.
+
+curl -v -i -X GET http://quotes.rest/qod.json?category=inspire
+For the API's that are private currently we support API Key based authentication. Please set a request header 'X-TheySaidSo-Api-Secret' with value of your API key. Alternatively you can also pass api_key= as a request parameter, though we strongly discourage this mode of passing the key.
+
+Here is an example of requesting for a random quote using curl.
+
+curl -v -i -X GET -H 'X-TheySaidSo-Api-Secret: <your_api_key>' http://quotes.rest/quote/random.json
+Here is an example of requesting for a random quote using passing api_key as a parameter.
+
+http://quotes.rest/quote/random.json?api_key=<your_api_key>
+Formats
+Want it in JSON format? Just append .json to the query like below. Alternatively you send a http accept header indicating you expect json response. Mashape by default does this so if you are using Mashape the following is not applicable.
+
+GET http://quotes.rest/qod.json
+Just append .xml to the query to get the result in XML format.
+
+GET http://quotes.rest/qod.xml
+Want it in javascript friendly format. We support JSONP format as well. Append .js to your request.
+
+GET http://quotes.rest/qod.js
+Rate Limit
+To maintain our service level we rate limit (10 API calls per hour) our public API usage. If you sign up and use the private api key or any of the supported authentication schemes this limit is increased to according to the service level of your plan.
+
+Quote of the day publicratelimited
+To get the quote of the day use the following api call.
+
+GET http://quotes.rest/qod.json
+Here is an example of using this from your browser. Click on the url below to test.
+
+http://quotes.rest/qod.json
+Here is an example using curl.
+
+curl -v -i -X GET http://quotes.rest/qod.json
+Here is an example using curl, if you are a subscriber and have an API key.
+
+curl -v -i -X GET -H 'X-Theysaidso-Api-Secret: <api_key>' http://quotes.rest/qod.json
+QOD Categories publicratelimited
+We have more than 15 categories (5 categories published now. 10 categories are being added) for our Quote of the Day service. To get the all the categories in the QOD system, use the following API.
+
+GET http://quotes.rest/qod/categories.json
+Here is an example using curl.
+
+curl -v -i -X GET http://quotes.rest/qod/categories.json
+QOD for a specific category publicratelimited
+Here is example of requesting a Management Quote of the day!
+
+GET http://quotes.rest/qod.json?category=management
+Here is an example using curl.
+
+curl -v -i -X GET http://quotes.rest/qod.json?category=management
+Random Quote privateratelimited
+Want a random quote from our system? Call the following API.
+
+GET http://quotes.rest/quote/random.json
+Quote with length restrictions privateratelimited
+Want a quote that fits your display profile? You can use any of the following combination to pick the best quote size.
+
+The following returns a quote with at least 100 char length.
+
+GET http://quotes.rest/quote/search.json?minlength=100
+The following returns a quote with maximum of 100 char length i.e. 0-100 char length quote.
+
+GET http://quotes.rest/quote/search.json?maxlength=100
+The following returns a quote with a length between 100 chars to 300 chars.
+
+GET http://quotes.rest/quote/search.json?minlength=100&maxlength=300
+Categories privateratelimited
+We categorize the quotes with tags and we have lot of categories of quotes in our system. To browse the categories in the system, use the following api. Adjust the start parameter to browse.
+
+GET http://quotes.rest/quote/categories.json?start=300
+If you need a random quote from any of the above 500+ categories, just specify the category in you query.
+
+GET http://quotes.rest/quote/search.json?category=
+Author privateratelimited
+Our quotes database has quotes from more than 100,000 authors. No where else you have this much variety. You can browse the author names by adjusting the start parameter.
+
+GET http://quotes.rest/quote/authors.json?start=1000
+If you want a random quote by an author, here is how you get it.
+
+GET http://quotes.rest/quote/search.json?author=
+Combination Example
+GET http://quotes.rest/quote/search?minlength=100&category=&author=
+Adding Quotes privateratelimited
+You can also programmatically add quotes to our system using our API. Use REST PUT to add a new quote. This will be your private quote in the system.
+
+PUT http://quotes.rest/quote.json?quote=&author=&tags=
+Random Quote Image privateratelimited
+We have beautiful curated quotes as images. You can access them easily using our API and show them in your websites or Applications. To get a random quote image use the following:
+
+GET http://quotes.rest/quote/image.json
+Random Quote Image from a category privateratelimited
+To get a random quote image from a particular category use the following:
+
+GET http://quotes.rest/quote/image.json?category=
+Random Quote Image from an Author privateratelimited
+To get a random quote image from a particular author use the following:
+
+GET http://quotes.rest/quote/image.json?author=
