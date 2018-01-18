@@ -226,3 +226,7 @@ GET http://quotes.rest/quote/image.json?author=
 http://www.brewerydb.com/developers/apps
 
 A great resource with 400 calls for free a day and an inexpensive cost for unlimited ($6). You can also use it for production and make money from it if desired. Endpoints are a little tricky but once you get the hang of it easy to use!
+
+## Denver RTD API
+
+If you're going to use this one be wary. I tried to get it up and running. It uses google's protobuf format (.pb), but the data supplied to users wasn't the (.proto) required to get it running. Could be awesome if you can get in touch with their support before you move forward to see how it works. 16 hours of looking and no luck for me.
