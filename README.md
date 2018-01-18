@@ -246,3 +246,10 @@ https://www.mapbox.com/developers/
 Overall great API. Very well documented. Not as much as Google Maps, but plenty to work off of with tutorials. Would highly recommend.
 
 Would also recommend the US National Park API.
+
+## Datamuse API
+
+https://www.datamuse.com/api/
+Great API, easy to use, no key needed, unlimited requests.
+Description per the website:
+The Datamuse API is a word-finding query engine for developers. You can use it in your apps to find words that match a given set of constraints and that are likely in a given context. You can specify a wide variety of constraints on meaning, spelling, sound, and vocabulary in your queries, in any combination.
