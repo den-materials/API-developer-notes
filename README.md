@@ -220,3 +220,9 @@ Random Quote Image from an Author privateratelimited
 To get a random quote image from a particular author use the following:
 
 GET http://quotes.rest/quote/image.json?author=
+
+## BreweryDB API
+
+http://www.brewerydb.com/developers/apps
+
+A great resource with 400 calls for free a day and an inexpensive cost for unlimited ($6). You can also use it for production and make money from it if desired. Endpoints are a little tricky but once you get the hang of it easy to use!
